@@ -1,10 +1,10 @@
 public class ExpressionBalancing {
 
-    public boolean isBalanced(String method){
-        SingleArrayStack stack = new SingleArrayStack(method.length());
+    public boolean isBalanced(String exp){
+        SingleArrayStack stack = new SingleArrayStack(exp.length());
 
-        for(int i =0; i< method.length(); i++){
-            char ch = method.charAt(i);
+        for(int i =0; i< exp.length(); i++){
+            char ch = exp.charAt(i);
 
             if(ch == '(' || ch =='{' || ch=='['){
                 stack.push(ch);
